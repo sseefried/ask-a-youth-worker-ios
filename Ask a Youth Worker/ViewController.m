@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property UIWebView *webView;
 
 @end
 
@@ -16,12 +17,16 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+  CGSize bds = self.view.bounds.size;
+  NSURL *url = [NSURL URLWithString:@"http://www.askayouthworker.com.au"];
+  self.webView = [[[UIWebView alloc] initWithFrame:CGRectMake(0,0, bds.width, bds.height)] init];
+  [self.view addSubview: self.webView];
+  [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
 }
 
 @end

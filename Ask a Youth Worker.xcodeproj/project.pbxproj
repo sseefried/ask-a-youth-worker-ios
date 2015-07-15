@@ -414,6 +414,7 @@
 				113D10001B3CD35300857D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		113D10011B3CD35300857D72 /* Build configuration list for PBXNativeTarget "Ask a Youth WorkerTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				113D10031B3CD35300857D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
